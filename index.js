@@ -1,4 +1,5 @@
 //import keystone
+require('dotenv').config();
 var keystone = require('keystone');
 
 // Set up our keystone instance
@@ -10,6 +11,8 @@ keystone.init({
     './server/public/js/',
     './server/public/img/',
   ],
+  'views':'templates',
+  'view engine':'pug',
   // Keystone includes an updates framework, 
   // which you can enable by setting the auto update option to true.
   // Updates provide an easy way to seed your database, 
@@ -31,6 +34,13 @@ keystone.import('./server/models');
 
 // Add routes later 
 keystone.set('routes', require('./server/routes'));
+
+keystone.set('locals', {
+  _: require('lodash'),
+  env: keystone.get('env'),
+  utils: keystone.utils,
+  editable: keystone.content.editable,
+ });
 
 // Start Keystone
 keystone.start();
