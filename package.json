@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "webpack-dev-server",
+    "start": "concurrently --kill-others \"yarn run dev\" \"yarn run watch\"",
     "compile": "webpack --config webpack.config.js",
     "test": "test",
     "watch": "webpack --watch"
