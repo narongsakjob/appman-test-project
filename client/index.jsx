@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
+// Components
+import Blog from './container/blog'
+
 const App = () => {
   return (
-    <div>
-      <h1> Hello Landing eiei</h1>
-    </div>
+    <center>
+      <h1> Hello Landing page </h1>
+      <Blog/>
+    </center>
   );
 };
 
