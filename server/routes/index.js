@@ -30,8 +30,10 @@ exports = module.exports = function (app) {
     res.send(renderFullPage());
   });
 
+	app.get('/blog', routes.views.blog);
 
-  app.get('/blog/:post', routes.views.blog);
+	
+  
 
 
 

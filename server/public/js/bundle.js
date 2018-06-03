@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'h1',\n      null,\n      ' Hello Landing asdsadsasddsaaaaaaada'\n    )\n  );\n};\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector('.root'));\n\n//# sourceURL=webpack:///./client/index.jsx?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'h1',\n      null,\n      ' Hello Landing asdsadsasddsaaaaaaada'\n    ),\n    _react2.default.createElement(\n      'a',\n      { href: 'blog' },\n      'GO TO BLOG'\n    )\n  );\n};\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector('.root'));\n\n//# sourceURL=webpack:///./client/index.jsx?");
 
 /***/ }),
 
