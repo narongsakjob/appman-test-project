@@ -11,7 +11,9 @@ var Blog = new keystone.List('Blog', {
 Blog.add({
     title: { type: String, required: true },
     image: { type: Types.CloudinaryImage },
-  body: { 
+    publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
+    
+    body: { 
       brief :{type:Types.Html,wysiwyg:true,height:150},
       extended:{type:Types.Html,wysiwyg:true,height:400}
    }

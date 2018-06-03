@@ -31,7 +31,8 @@ exports = module.exports = function (app) {
   });
 
 
-  app.get('/blog',routes.views.blog);
+  app.get('/blog/:post', routes.views.blog);
+
 
 
 };
