@@ -30,13 +30,8 @@ exports = module.exports = function (app) {
     // Send the html boilerplate
     res.send(renderFullPage());
   });
-
-	app.get('/blog', routes.views.blog);
-
-	
-  
-
-  app.get('/blog',routes.views.blog);
+  app.get('/blog/:post',routes.views.blogShow);
+  app.get('/blog',routes.views.blogIndex);
   app.get('/api/blog', keystone.middleware.api, routes.api.blog.list)
 
 

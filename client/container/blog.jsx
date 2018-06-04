@@ -22,9 +22,10 @@ export default class Blog extends React.Component {
       <div>
         Hello blog list
         <div>
+        <a href="blog">All Blog</a>
           { _.map(this.state.blog, (item, i) => 
             <div key={item.slug}>
-              <a href={item.slug}>{item.title}</a>
+              <a href={"blog/"+item.slug}>{item.title}</a>
             </div>
           )}
         </div>
